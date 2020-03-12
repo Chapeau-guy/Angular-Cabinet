@@ -1,0 +1,35 @@
+<div class="content">
+  <div class="alert alert-danger" [hidden]="!error">
+    Mauvais Login/password...
+  </div>
+  <div class="col-lg-8 col-md-7">
+    <form (submit)="login()">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="username" name="username" 
+            [(ngModel)]="credentials.username" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="text" class="form-control" id="password" name="password" 
+            [(ngModel)]="credentials.password" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-left">
+          <button type="submit" class="btn btn-primary">Se-connecter</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+
+</div>
