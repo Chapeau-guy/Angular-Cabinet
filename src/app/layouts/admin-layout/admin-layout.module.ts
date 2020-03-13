@@ -16,6 +16,7 @@ import { TypographyComponent } from "../../pages/typography/typography.component
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { LoginComponent } from 'src/app/login/login.component';
+import { TacheComponent } from 'src/app/pages/tache/tache.component';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { LoginComponent } from 'src/app/login/login.component';
     TypographyComponent,
     NotificationsComponent,
     MapComponent,
+    TacheComponent,
     // RtlComponent
   ]
 })

@@ -15,7 +15,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 import { UserService } from './service/user.service';
 import { AppService } from './app.service';
-import { TacheService } from './service/espace.service';
+import { TacheService } from './service/tache.service';
 @Injectable()
 export class XhrInterceptor implements HttpInterceptor{
   intercept(req : HttpRequest<any>, next: HttpHandler){

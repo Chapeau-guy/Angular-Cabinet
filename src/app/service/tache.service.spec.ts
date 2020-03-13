@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TacheService } from './espace.service';
+import { TacheService } from './tache.service';
 
 describe('EspaceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
