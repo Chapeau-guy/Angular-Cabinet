@@ -1,6 +1,7 @@
 export class Tache {
     titre:String;
     description:String;
-    dateCreation:Date;
+    dateDebut:Date;
+    dateFin:Date;
     statut:String;
 }

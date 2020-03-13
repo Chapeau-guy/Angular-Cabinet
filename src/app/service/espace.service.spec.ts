@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EspaceService } from './espace.service';
+import { TacheService } from './espace.service';
 
 describe('EspaceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: EspaceService = TestBed.get(EspaceService);
+    const service: TacheService = TestBed.get(TacheService);
     expect(service).toBeTruthy();
   });
 });

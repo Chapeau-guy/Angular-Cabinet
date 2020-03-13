@@ -23,5 +23,8 @@ export class TacheService {
   public updateTache(id:number,user:any){
     return this.httpClient.put(this.baseURL+"/"+id,user);
   }
+  public validateTache(id:number,user:any){
+    // la validation
+  }
 }
 
