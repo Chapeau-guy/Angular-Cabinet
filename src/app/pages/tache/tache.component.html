@@ -1,0 +1,43 @@
+<p>
+  tache works!
+</p>
+<p>
+  espace works!
+</p>
+<div>
+  <h4>Ajouter un Utilisateur</h4>
+  <form [formGroup]="myForm" (ngSubmit)="createUser(myForm)">
+      <label>Titre</label>
+      <input type="text" [(ngModel)]="tache.titre" formControlName="titre"/>
+      <label>Description</label>
+      <input type="text" [(ngModel)]="tache.description" formControlName="description"/>
+      <label>dateCreation</label>
+      <input type="text" [(ngModel)]="tache.dateCreation" formControlName="dateCreation"/>
+      <label>statut</label>
+      <input type="text" [(ngModel)]="tache.statut" formControlName="statut"/>
+      <button>Ajouter</button>
+  </form>
+</div>
+<div>
+  <table>
+      <tr>
+          <th>
+              NOM
+          </th>
+          <th>
+              PRENOM
+          </th>
+          <th>Action</th>
+      </tr>
+      <tr *ngFor="let u of tache">
+          <td>{{u.titre}}</td>
+          <td>{{u.description}}</td>
+          <td>{{u.dateCreation}}</td>
+          <td>{{u.statut}}</td>
+          <td><button (click)="deleteUser(u)">Delete</button>
+          <button (click)="editUser(u.idUtilisateur)">Editer</button></td>
+          
+      </tr>
+  </table>
+</div>
+
