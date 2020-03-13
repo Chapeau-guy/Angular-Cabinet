@@ -15,6 +15,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 import { UserService } from './service/user.service';
 import { AppService } from './app.service';
+import { TacheService } from './components/espace/espace.service';
 @Injectable()
 export class XhrInterceptor implements HttpInterceptor{
   intercept(req : HttpRequest<any>, next: HttpHandler){
@@ -38,7 +39,7 @@ export class XhrInterceptor implements HttpInterceptor{
     ToastrModule.forRoot()
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
-  providers: [AppService, UserService, {provide: HTTP_INTERCEPTORS, useClass: XhrInterceptor, multi :true}],
+  providers: [AppService, UserService, TacheService, {provide: HTTP_INTERCEPTORS, useClass: XhrInterceptor, multi :true}],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
